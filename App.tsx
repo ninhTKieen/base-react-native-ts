@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MainNavigator from '@src/navigations/main-navigator';
-import {QueryClient, QueryClientProvider} from 'react-query';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import {Provider as ReduxProvider} from 'react-redux';
 import {store} from '@src/features/store';
 
