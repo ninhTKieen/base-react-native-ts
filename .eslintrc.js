@@ -14,6 +14,7 @@ module.exports = {
         'no-undef': 'off',
         '@typescript-eslint/no-unused-vars': 'warn',
         'react-native/no-inline-styles': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
       },
     },
   ],
