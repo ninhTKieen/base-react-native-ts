@@ -1,6 +1,7 @@
-import {configureStore, combineReducers} from '@reduxjs/toolkit';
-import authReducer from './auth/auth.slice';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import reactotron from 'reactotronConfig';
+
+import authReducer from './auth/auth.slice';
 
 const rootReducer = combineReducers({
   auth: authReducer,

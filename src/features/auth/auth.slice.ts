@@ -1,7 +1,7 @@
-import {createSlice} from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
+import { RootState } from '@src/features/store';
 
-import {RootState} from '@src/features/store';
-import {AuthState} from './auth.model';
+import { AuthState } from './auth.model';
 
 const initialState: AuthState = {
   currentUser: undefined,
@@ -24,7 +24,7 @@ const authSlice = createSlice({
   },
 });
 
-export const {login, logout} = authSlice.actions;
+export const { login, logout } = authSlice.actions;
 export const authActions = authSlice.actions;
 
 export const selectCurrentUser = (state: RootState) => state.auth.currentUser;

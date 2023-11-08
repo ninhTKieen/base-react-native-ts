@@ -1,14 +1,14 @@
+import { NavigationProp, useNavigation } from '@react-navigation/native';
+import { i18nKeys } from '@src/configs/i18n';
+import { RouteStackParamList } from '@src/configs/routes';
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import { useTranslation } from 'react-i18next';
+import { StyleSheet, Text, View } from 'react-native';
 import ADIcon from 'react-native-vector-icons/AntDesign';
-import {useNavigation, NavigationProp} from '@react-navigation/native';
-import {RouteStackParamList} from '@src/configs/routes';
-import {useTranslation} from 'react-i18next';
-import {i18nKeys} from '@src/configs/i18n';
 
 const LoginScreen = (): JSX.Element => {
   const navigation = useNavigation<NavigationProp<RouteStackParamList>>();
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <View style={styles.container}>
