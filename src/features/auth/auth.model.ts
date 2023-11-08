@@ -1,4 +1,4 @@
-export interface AuthState {
+export interface IAuthState {
   currentUser?: any;
   isLoggedIn: boolean;
 }
